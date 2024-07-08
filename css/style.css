@@ -6,40 +6,134 @@
     box-sizing: border-box;
 }
 
+/* Common things */
+.container,
+.per-parlare .container,
+.tecnologia div,
+#navigation-bar {
+    width: 1300px;
+}
+
+header,
+#navigation-bar,
+#links,
+section,
+.login,
+.container,
+.per-parlare .container,
+.nav-footer {
+    display: flex;
+
+}
+
+#navigation-bar>*,
+.container>div,
+section>div,
+.container>div {
+    border: dashed black 2px;
+}
+
 /* Generics */
 header {
     background-color: #3161E0;
-    display: flex;
     height: 80px;
 }
 
 ul * {
     list-style: none;
     text-decoration: none;
+    color: black;
+}
+
+section {
+    background-color: #FFFFFE;
+    height: 700px;
+}
+
+section,
+#links {
+    justify-content: center;
+    align-items: center;
 }
 
 /* Navigation bar */
 #navigation-bar {
-    display: flex;
     margin: auto;
     width: 1300px;
     background-color: goldenrod;
 }
 
 #navigation-bar>* {
-    border: dashed black 2px;
     flex-grow: 1;
     padding: 5px;
 }
 
 #links {
-    display: flex;
     flex-grow: 2;
     gap: 15px;
-    justify-content: center;
 }
 
 .login {
-    display: flex;
     justify-content: flex-end;
+}
+
+/* Main section */
+.il-tuo-posto {
+    background-color: #062481;
+    height: 500px;
+    border-bottom: 5px solid rgb(248 188 229);
+}
+
+.il-tuo-posto div {
+    height: 400px;
+    background-color: #BCF8E8;
+    width: 1000px;
+}
+
+.container div {
+    height: 600px;
+}
+
+.dove-trovarsi {
+    background-color: #D3D3D3;
+}
+
+.big {
+    flex-basis: 70%;
+    background-color: #3161E0;
+}
+
+.small {
+    flex-basis: 30%;
+    background-color: palevioletred;
+}
+
+.tecnologia {
+    background-color: #D3D3D3;
+    height: 1100px;
+}
+
+.tecnologia div {
+    height: 1000px;
+    background-color: #228B23;
+}
+
+.per-parlare {
+    padding-bottom: 50px;
+    background-color: #23272A;
+}
+
+.side-bar {
+    flex-basis: calc(100% / 3);
+    background-color: #F0807F;
+}
+
+.nav-footer {
+    flex-basis: 100%;
+    background-color: #1FB2AA;
+}
+
+.nav-footer div {
+    flex-basis: calc(100% / 4);
+    border: dashed white 2px;
 }
