@@ -21,7 +21,8 @@ section,
 .login,
 .container,
 .per-parlare .container,
-.nav-footer {
+.nav-footer,
+#footer-bar {
     display: flex;
 
 }
@@ -29,14 +30,24 @@ section,
 #navigation-bar>*,
 .container>div,
 section>div,
-.container>div {
+.container>div,
+#footer-bar div {
     border: dashed black 2px;
+}
+
+header,
+#footer-bar {
+    height: 80px;
+}
+
+#navigation-bar,
+#footer-bar div {
+    background-color: goldenrod;
 }
 
 /* Generics */
 header {
     background-color: #3161E0;
-    height: 80px;
 }
 
 ul * {
@@ -51,21 +62,25 @@ section {
 }
 
 section,
+#footer-bar,
 #links {
     justify-content: center;
     align-items: center;
 }
 
-/* Navigation bar */
-#navigation-bar {
+#navigation-bar,
+#footer-bar {
     margin: auto;
-    width: 1300px;
-    background-color: goldenrod;
 }
 
+#navigation-bar>*,
+#footer-bar div {
+    padding: 5px;
+}
+
+/* Navigation bar */
 #navigation-bar>* {
     flex-grow: 1;
-    padding: 5px;
 }
 
 #links {
@@ -119,8 +134,10 @@ section,
 }
 
 .per-parlare {
-    padding-bottom: 50px;
     background-color: #23272A;
+    height: 650px;
+    align-items: flex-start;
+    padding-top: 15px;
 }
 
 .side-bar {
@@ -136,4 +153,16 @@ section,
 .nav-footer div {
     flex-basis: calc(100% / 4);
     border: dashed white 2px;
+}
+
+/* Footer bar */
+footer {
+    background-color: #23272A;
+    padding-top: 30px;
+    border-top: solid 2px #B7B7B7;
+}
+
+#footer-bar {
+    background-color: #7FFED4;
+    justify-content: space-between;
 }
