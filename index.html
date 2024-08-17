@@ -6,72 +6,91 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Struttura-discord">
     <meta name=" author" content=" Novice web developer">
-    <link rel="stylesheet" href="css/style.css">
     <title>Struttura-discord</title>
+    <!-- STYLE CSS -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <!-- Navigation bar -->
-    <header>
-        <div id="navigation-bar">
-            <div class="logo">Logo</div>
-            <nav>
+    <!-- Heading -->
+    <!-- Top Navbar -->
+    <header class="h-80 row bg-secondary py-20">
+        <nav class="navbar container bg-gold space-beetween">
 
-                <ul id="links">
+            <!--  Discord Logo -->
+            <div class="top-logo col p-5">Logo</div>
+
+            <!-- Top heading links -->
+            <div class="col grow-1 p-5">
+                <ul class="links row gap-15">
+                    <li><a href="#">Link</a></li>
                     <li><a href="#">Link</a></li>
                     <li><a href="#">Link</a></li>
                     <li><a href="#">Link</a></li>
                     <li><a href="#">Link</a></li>
                 </ul>
-            </nav>
-            <div class="login">Login</div>
-        </div>
+            </div>
+
+            <!-- Login btn -->
+            <div class="col text-right p-5">Login</div>
+        </nav>
     </header>
 
     <!-- Main section -->
     <main>
-        <section class="il-tuo-posto">
-            <div></div>
-        </section>
-        <section class="un-luogo">
-            <div class="container">
-                <div class="big"></div>
-                <div class="small"></div>
+        <!-- Jumbotrom -->
+        <header class="jumbotrom bg-dark-blue py-50">
+            <div class="wrapper bg-light-green"></div>
+        </header>
+
+        <!-- Channels -->
+        <section class="channels py-50">
+            <div class="row container">
+                <div class="col col-70 bg-secondary"></div>
+                <div class="col col-30 bg-primary"></div>
             </div>
         </section>
-        <section class="dove-trovarsi">
-            <div class="container">
-                <div class="small"></div>
-                <div class="big"></div>
+
+        <!-- Voice Channels -->
+        <section class="voice-channels bg-grey py-50">
+            <div class="row container">
+                <div class=" col col-30 bg-primary"></div>
+                <div class=" col col-70 bg-secondary"></div>
             </div>
         </section>
-        <section class="fandom">
-            <div class="container">
-                <div class="big"></div>
-                <div class="small"></div>
+
+        <!-- Community -->
+        <section class="community py-50">
+            <div class="row container">
+                <div class="col col-70 bg-secondary"></div>
+                <div class="col col-30 bg-primary"></div>
             </div>
         </section>
-        <section class="tecnologia">
-            <div></div>
+
+        <!-- Streaming -->
+        <section class="streaming bg-grey py-50">
+            <div class="container bg-green"></div>
         </section>
-        <section class="per-parlare">
-            <div class="container">
-                <div class="side-bar"></div>
-                <div class="nav-footer">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
+
+        <!-- Socials -->
+        <section class="ours-socials py-50">
+            <div class="container row">
+                <div class="side-bar col"></div>
+                <div class="footer-navbar col grow-1 row">
+                    <div class="col"></div>
+                    <div class="col"></div>
+                    <div class="col"></div>
+                    <div class="col"></div>
                 </div>
             </div>
         </section>
     </main>
 
-    <!-- Footer bar -->
-    <footer>
-        <div id="footer-bar">
-            <div class="logo">Logo</div>
-            <div class="login">bottone</div>
+    <!-- Footer navbar -->
+    <footer class="py-20">
+        <div class="bottom-navbar h-80 space-between py-20 bg-light-green">
+            <div class="bottom-logo col bg-gold p-5">Logo</div>
+            <div class="sign-in col text-right bg-gold p-5">Bottone</div>
         </div>
     </footer>
 
